@@ -1,10 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,regular,italic,600,600italic,700,700italic,800,800italic);
-
-*,
-*::before,
-*:after {
+* {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   color: #F3F4F1;
@@ -26,7 +23,7 @@
   width: 100%;
   background: url("../img/960x0.jpg") no-repeat center center/cover;
   -webkit-filter: grayscale(50%) opacity(20%);
-  filter: grayscale(50%) opacity(20%);
+          filter: grayscale(50%) opacity(20%);
 }
 
 header {
@@ -34,8 +31,8 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: fixed;
   top: 0;
   left: 0;
@@ -49,7 +46,7 @@ header {
   width: auto;
   margin: 1rem;
   -webkit-filter: invert(80%);
-  filter: invert(80%);
+          filter: invert(80%);
   z-index: inherit;
 }
 
@@ -60,7 +57,7 @@ header {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 2fr 1fr;
-  grid-template-rows: 2fr 1fr;
+      grid-template-rows: 2fr 1fr;
 }
 
 .hero .head-img {
@@ -68,10 +65,10 @@ header {
   height: auto;
   margin: 0 auto;
   -webkit-filter: invert(80%);
-  filter: invert(80%);
+          filter: invert(80%);
   -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   z-index: 2;
 }
 
@@ -90,12 +87,12 @@ h1 {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   z-index: inherit;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .btn-wrapper {
@@ -103,8 +100,9 @@ h1 {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .btn {
@@ -115,6 +113,7 @@ h1 {
   height: 2rem;
   color: white;
   z-index: inherit;
+  margin: 0 1rem;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -123,7 +122,4 @@ h1 {
   background-color: white;
   color: black;
 }
-
-
-
 /*# sourceMappingURL=main.css.map */

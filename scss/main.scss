@@ -1,9 +1,7 @@
 $primary-color: #F3F4F1;
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,regular,italic,600,600italic,700,700italic,800,800italic);
 
-*,
-*::before,
-*:after {
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -87,7 +85,7 @@ h1 {
 .btn-wrapper {
     display: flex;
     width: 100%;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 
@@ -99,7 +97,9 @@ h1 {
     height: 2rem;
     color: white;
     z-index: inherit;
+    margin: 0 1rem;
     transition: all 0.3s ease-in-out;
+
 }
 
 .btn:hover {
