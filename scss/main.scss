@@ -227,3 +227,21 @@ h1 {
     width: 100vw;
     height: 50vw;
 }
+
+.concert-dates {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.concert-dates h2 {
+    color: $text-color;
+    text-transform: uppercase;
+}
+
+footer {
+    width: 100vw;
+    height: 20vh;
+    background-color: $secondary-color;
+}
