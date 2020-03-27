@@ -26,8 +26,8 @@ $text-color: #555f61;
     left: 0;
     height: 100vh;
     width: 100%;
-    background: url('../img/960x0.jpg') no-repeat center center/cover;
-    filter: grayscale(50%) opacity(20%);
+    background: url('../img/Ghosts_portrait_MAR25_FIN1_web.jpg') no-repeat center center/cover;
+    // filter: grayscale(100%) opacity(10%);
 }
 
 header {
@@ -37,7 +37,7 @@ header {
     top: 0;
     left: 0;
     width: 100vw;
-    background-color: rgba(0, 0, 0, 0.47);
+    background-color: rgba(0, 0, 0, 0.05);
     z-index: 3;
 }
 
@@ -174,7 +174,7 @@ h1 {
 
 .news {
     padding: 0 2rem;
-    background-color: $secondary-color;
+    background-color: $primary-color;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -182,6 +182,7 @@ h1 {
 }
 
 .news-heading {
+    color: $text-color;
     text-transform: uppercase;
     padding: 1rem;
 }
@@ -214,7 +215,7 @@ h1 {
 
 .news .news-card p {
     font-size: 0.8rem;
-    font-weight: 600;
+    font-weight: 400;
     line-height: 1.5rem;
     color: $text-color;
     text-align: justify;
@@ -223,6 +224,6 @@ h1 {
 }
 
 .news-img {
-    width: 100%;
-    height: auto;
+    width: 100vw;
+    height: 50vw;
 }
