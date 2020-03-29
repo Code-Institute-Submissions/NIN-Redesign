@@ -7,10 +7,11 @@ $text-color: #555f61;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    color: $primary-color;
     font-family: 'Open Sans',
         sans-serif;
 }
+
+body {}
 
 .wrapper {
     height: 100vh;
@@ -179,7 +180,7 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+
 }
 
 .news-heading {
@@ -188,7 +189,7 @@ h1 {
     padding: 1rem;
 }
 
-.news .news-card {
+.news .card {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -196,18 +197,18 @@ h1 {
     background-color: $primary-color;
     margin-bottom: 2rem;
     border-radius: 5px;
-    height: 45vh;
+
 }
 
 
-.news .news-card h3 {
+.news .card h3 {
     color: $text-color;
     text-align: left;
     padding: 1rem 1rem 0 1rem;
     text-transform: uppercase;
 }
 
-.news .news-card h4 {
+.news .card h4 {
     color: orangered;
     text-align: left;
     padding: 0 1rem;
@@ -215,14 +216,14 @@ h1 {
 
 }
 
-.news .news-card p {
+.news .card p {
     font-size: 0.8rem;
     font-weight: 400;
     line-height: 1.5rem;
     color: $text-color;
     text-align: justify;
     padding: 1rem;
-    text-transform: uppercase;
+
 }
 
 .news-img {
@@ -233,18 +234,61 @@ h1 {
 .concert-dates {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 1rem 0;
-    height: 100vh;
+    padding: 1rem;
+
+
 }
 
 .concert-dates h2 {
+    align-self: center;
     color: $text-color;
     text-transform: uppercase;
+    padding: 1rem;
 }
+
+.concert-dates ul {
+    list-style: none;
+}
+
+.concert-dates ul .gig-dates {
+    color: $text-color;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+.concert-dates details {
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.concert-dates details summary {
+    color: $text-color;
+}
+
+.concert-dates details .gig-info {
+    display: flex;
+}
+
 
 footer {
     width: 100vw;
     height: 20vh;
     background-color: $secondary-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 1rem;
+    font-size: 2rem;
+    color: $text-color;
+}
+
+footer a {
+    text-decoration: none;
 }
