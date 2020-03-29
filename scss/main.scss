@@ -179,6 +179,7 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
 .news-heading {
@@ -195,6 +196,7 @@ h1 {
     background-color: $primary-color;
     margin-bottom: 2rem;
     border-radius: 5px;
+    height: 45vh;
 }
 
 
@@ -233,6 +235,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     padding: 1rem 0;
+    height: 100vh;
 }
 
 .concert-dates h2 {
