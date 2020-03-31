@@ -11,7 +11,13 @@ $text-color: #555f61;
         sans-serif;
 }
 
-body {}
+body {
+    color: $primary-color;
+    font-family: 'Open Sans',
+        sans-serif;
+
+
+}
 
 .wrapper {
     height: 100vh;
@@ -174,13 +180,13 @@ h1 {
 }
 
 .news {
-    padding: 0 2rem;
+    padding: 1rem;
     background-color: $primary-color;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    height: 100vh;
 }
 
 .news-heading {
@@ -227,21 +233,26 @@ h1 {
 }
 
 .news-img {
-    width: 100vw;
+    width: 100%;
     height: 50vw;
 }
 
 .concert-dates {
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: 1rem;
+    height: 100vh;
+    width: 100%;
+    color: $primary-color;
+    background: url('../img/tom-rogerson-8bYoi9UGglU-unsplash.jpg') no-repeat center center/cover;
 
 
 }
 
 .concert-dates h2 {
     align-self: center;
-    color: $text-color;
+    color: $primary-color;
     text-transform: uppercase;
     padding: 1rem;
 }
@@ -251,29 +262,43 @@ h1 {
 }
 
 .concert-dates ul .gig-dates {
-    color: $text-color;
+    color: $primary-color;
     font-weight: bold;
     padding: 0.5rem;
+    width: 80vw;
+
 }
 
 .concert-dates details {
     font-weight: 300;
     cursor: pointer;
+
+
 }
 
 .concert-dates details summary {
     color: $text-color;
+
 }
 
 .concert-dates details .gig-info {
     display: flex;
+    z-index: 3;
 }
 
 
 footer {
-    width: 100vw;
+    width: 100%;
     height: 20vh;
+    color: $text-color;
     background-color: $secondary-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer social {
     display: flex;
     justify-content: center;
     align-items: center;
