@@ -13,6 +13,7 @@ $text-color: #555f61;
 
 body {
     color: $primary-color;
+    background-color: $secondary-color;
     font-family: 'Open Sans',
         sans-serif;
 }
@@ -23,7 +24,7 @@ html {
     height: 100%;
 }
 
-.wrapper {
+.landing-wrapper {
     height: 100%;
     background-color: $secondary-color;
     display: flex;
@@ -311,4 +312,32 @@ footer .social-icons {
 
 footer a {
     text-decoration: none;
+}
+
+// about page
+.about-wrapper {
+    height: 100%;
+    background-color: $secondary-color;
+}
+
+.content-wrapper {
+    padding-top: 6rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+}
+
+.band-info .band-img {
+    width: 100%;
+    height: auto;
+}
+
+.band-info .band-article {
+    margin-top: 1rem;
+}
+
+.band-info .band-article p {
+    padding-bottom: 0.5rem;
+    line-height: 1.8rem;
+    color: $primary-color;
 }

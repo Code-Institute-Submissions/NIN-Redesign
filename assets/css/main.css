@@ -9,6 +9,7 @@
 
 body {
   color: #F3F4F1;
+  background-color: #221f1e;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -17,7 +18,7 @@ html {
   height: 100%;
 }
 
-.wrapper {
+.landing-wrapper {
   height: 100%;
   background-color: #221f1e;
   display: -webkit-box;
@@ -375,5 +376,31 @@ footer .social-icons {
 
 footer a {
   text-decoration: none;
+}
+
+.about-wrapper {
+  height: 100%;
+  background-color: #221f1e;
+}
+
+.content-wrapper {
+  padding-top: 6rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.band-info .band-img {
+  width: 100%;
+  height: auto;
+}
+
+.band-info .band-article {
+  margin-top: 1rem;
+}
+
+.band-info .band-article p {
+  padding-bottom: 0.5rem;
+  line-height: 1.8rem;
+  color: #F3F4F1;
 }
 /*# sourceMappingURL=main.css.map */
