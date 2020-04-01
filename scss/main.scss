@@ -24,7 +24,7 @@ html {
 }
 
 .wrapper {
-    min-height: 100%;
+    min-height: 100vh;
     background-color: $secondary-color;
     display: flex;
     flex-direction: column;
@@ -124,15 +124,6 @@ header {
     align-items: center;
 }
 
-.hero .head-img {
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    filter: invert(80%);
-    align-self: center;
-    // box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.47);
-    z-index: 2;
-}
 
 .cta-wrapper {
     display: flex;
