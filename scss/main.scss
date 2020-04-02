@@ -79,10 +79,11 @@ header {
 .nav-links {
     position: absolute;
     top: 0;
-    right: -8rem;
+    right: -10rem;
     background-color: rgba(34, 31, 30, 0.99);
     list-style: none;
-    width: 8rem;
+    width: 10rem;
+    height: 100vh;
     transition: all 0.3s ease-in-out;
 
 }
@@ -92,18 +93,20 @@ header {
 }
 
 #menu:checked~#menu-toggle {
-    right: 9rem;
+    right: 11rem;
     transform: rotate(90deg);
 }
 
 .nav-item {
     padding-top: 0.8rem;
-    padding: 0.8rem 0.8rem 0 0.8rem;
+    padding: 1.5rem;
 
 }
 
-.nav-links:last-child {
-    padding-bottom: 1rem;
+.nav-item .social-icons {
+    border-radius: 50%;
+    padding: 1rem;
+    font-size: 2rem;
 }
 
 .nav-item a {
@@ -111,10 +114,11 @@ header {
     text-decoration: none;
     transition: all 0.3s ease-in-out;
     color: $primary-color;
+    cursor: pointer;
 }
 
 .nav-item a:hover {
-    border-bottom: 3px solid $primary-color;
+    color: $text-color;
 }
 
 .hero {
@@ -285,13 +289,14 @@ h1 {
 
 footer {
     width: 100%;
-    height: 20vh;
+    height: auto;
     color: $text-color;
     background-color: $secondary-color;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 1rem;
 }
 
 footer social {
@@ -301,17 +306,15 @@ footer social {
 }
 
 footer .social-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-radius: 50%;
     padding: 1rem;
     font-size: 2rem;
     color: $text-color;
 }
 
-footer a {
+.social-icons a {
     text-decoration: none;
+
 }
 
 // about page
