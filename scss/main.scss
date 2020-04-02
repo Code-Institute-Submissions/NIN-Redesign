@@ -51,7 +51,7 @@ header {
     top: 0;
     left: 0;
     width: 100vw;
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: rgba(34, 31, 30, 0.99);
     z-index: 3;
 }
 
@@ -80,7 +80,7 @@ header {
     position: absolute;
     top: 0;
     right: -8rem;
-    background-color: rgba(0, 0, 0, 0.0);
+    background-color: rgba(34, 31, 30, 0.99);
     list-style: none;
     width: 8rem;
     transition: all 0.3s ease-in-out;
@@ -315,7 +315,7 @@ footer a {
 }
 
 // about page
-.about-wrapper {
+.wrapper {
     height: 100%;
     background-color: $secondary-color;
 }
@@ -340,4 +340,24 @@ footer a {
     padding-bottom: 0.5rem;
     line-height: 1.8rem;
     color: $primary-color;
+}
+
+.disco-wrapper {
+    padding: calc(1rem + 1vw);
+    padding-top: 6rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    align-items: center;
+    gap: 2rem;
+
+}
+
+.album-info {
+    padding: 1rem;
+    max-width: 1000px;
+    overflow: hidden;
+}
+
+.album-info img {
+    width: 100%
 }
