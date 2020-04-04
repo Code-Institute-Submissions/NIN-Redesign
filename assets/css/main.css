@@ -7,9 +7,14 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/webfonts/fa-solid-900.woff");
+}
+
 body {
-  color: #F3F4F1;
-  background-color: #221f1e;
+  color: #eaf6f6;
+  background-color: #100c08;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -20,7 +25,7 @@ html {
 
 .landing-wrapper {
   height: 100%;
-  background-color: #221f1e;
+  background-color: #100c08;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -122,12 +127,12 @@ header {
   text-decoration: none;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  color: #F3F4F1;
+  color: #eaf6f6;
   cursor: pointer;
 }
 
 .nav-item a:hover {
-  color: #555f61;
+  color: #3c474b;
 }
 
 .hero {
@@ -185,12 +190,12 @@ header {
 .btn {
   text-decoration: none;
   display: inline-block;
-  border: 1px solid #F3F4F1;
+  border: 1px solid #eaf6f6;
   padding: 0.5rem;
   width: 6.5rem;
   background: rgba(0, 0, 0, 0.1);
   text-align: center;
-  color: #F3F4F1;
+  color: #eaf6f6;
   z-index: inherit;
   margin: 0 1rem;
   font-weight: bold;
@@ -201,13 +206,13 @@ header {
 }
 
 .btn:hover {
-  background-color: #F3F4F1;
-  color: #221f1e;
+  background-color: #eaf6f6;
+  color: #100c08;
 }
 
 .news {
   padding: 1rem;
-  background-color: #F3F4F1;
+  background-color: #eaf6f6;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -225,7 +230,7 @@ header {
 }
 
 .news-heading {
-  color: #555f61;
+  color: #3c474b;
   text-transform: uppercase;
   padding: 1rem;
 }
@@ -244,30 +249,30 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #F3F4F1;
+  background-color: #eaf6f6;
   margin-bottom: 2rem;
   border-radius: 5px;
 }
 
 .news .card h3 {
-  color: #555f61;
+  color: #3c474b;
   text-align: left;
   padding: 1rem 1rem 0 1rem;
   text-transform: uppercase;
 }
 
 .news .card h4 {
-  color: orangered;
+  color: #ce050f;
   text-align: left;
   padding: 0 1rem;
-  font-weight: 300;
+  font-weight: 600;
 }
 
 .news .card p {
   font-size: 0.8rem;
   font-weight: 400;
   line-height: 1.5rem;
-  color: #555f61;
+  color: #3c474b;
   text-align: justify;
   padding: 1rem;
 }
@@ -289,9 +294,8 @@ header {
       -ms-flex-align: center;
           align-items: center;
   padding: 1rem;
-  height: 100vh;
   width: 100%;
-  color: #F3F4F1;
+  color: #eaf6f6;
   background: url("../img/tom-rogerson-8bYoi9UGglU-unsplash.jpg") no-repeat center center/cover;
 }
 
@@ -299,29 +303,48 @@ header {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  color: #F3F4F1;
+  color: #eaf6f6;
   text-transform: uppercase;
   padding: 1rem;
 }
 
 .concert-dates ul {
   list-style: none;
+  margin-bottom: 8rem;
 }
 
 .concert-dates ul .gig-dates {
-  color: #F3F4F1;
+  color: #fcfafc;
   font-weight: bold;
-  padding: 0.5rem;
+  padding: 0.8rem;
   width: 80vw;
+  border: 2px solid #eaf6f6;
+  margin-bottom: 1rem;
+}
+
+.gig-dates h4 {
+  display: inline-block;
+  border-bottom: 2px solid #ce050f;
 }
 
 .concert-dates details {
-  font-weight: 300;
+  font-weight: 400;
   cursor: pointer;
 }
 
 .concert-dates details summary {
-  color: #555f61;
+  padding-top: 0.5rem;
+  color: #fcfafc;
+  list-style: none;
+  font-size: 1.2rem;
+  max-width: 100%;
+}
+
+.concert-dates details summary:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f05a";
+  font-weight: 900;
+  padding-right: 1rem;
 }
 
 .concert-dates details .gig-info {
@@ -333,9 +356,8 @@ header {
 
 footer {
   width: 100%;
-  height: auto;
-  color: #555f61;
-  background-color: #221f1e;
+  color: #3c474b;
+  background-color: #100c08;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -368,7 +390,7 @@ footer .social-icons {
   border-radius: 50%;
   padding: 1rem;
   font-size: 2rem;
-  color: #555f61;
+  color: #3c474b;
 }
 
 .social-icons a {
@@ -377,7 +399,7 @@ footer .social-icons {
 
 .wrapper {
   height: 100%;
-  background-color: #221f1e;
+  background-color: #100c08;
 }
 
 .content-wrapper {
@@ -398,7 +420,7 @@ footer .social-icons {
 .band-info .band-article p {
   padding-bottom: 0.5rem;
   line-height: 1.8rem;
-  color: #F3F4F1;
+  color: #eaf6f6;
 }
 
 .disco-wrapper {

@@ -1,6 +1,8 @@
-$primary-color: #F3F4F1;
-$secondary-color: #221f1e;
-$text-color: #555f61;
+$primary-color: #eaf6f6;
+$secondary-color: #100c08;
+$text-color: #3c474b;
+$text-color-light: #fcfafc;
+$accent-color:#ce050f;
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,regular,italic,600,600italic,700,700italic,800,800italic);
 
 * {
@@ -9,6 +11,11 @@ $text-color: #555f61;
     margin: 0;
     font-family: 'Open Sans',
         sans-serif;
+}
+
+@font-face {
+    font-family: "Font Awesome 5 Free";
+    src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/webfonts/fa-solid-900.woff');
 }
 
 // html {
@@ -224,10 +231,10 @@ header {
 }
 
 .news .card h4 {
-    color: orangered;
+    color: $accent-color;
     text-align: left;
     padding: 0 1rem;
-    font-weight: 300;
+    font-weight: 600;
 
 }
 
@@ -251,13 +258,12 @@ header {
     flex-direction: column;
     align-items: center;
     padding: 1rem;
-    height: 100vh;
     width: 100%;
     color: $primary-color;
     background: url('../img/tom-rogerson-8bYoi9UGglU-unsplash.jpg') no-repeat center center/cover;
-
-
 }
+
+
 
 .concert-dates h2 {
     align-self: center;
@@ -268,26 +274,41 @@ header {
 
 .concert-dates ul {
     list-style: none;
+    margin-bottom: 8rem;
 }
 
 .concert-dates ul .gig-dates {
-    color: $primary-color;
+    color: $text-color-light;
     font-weight: bold;
-    padding: 0.5rem;
+    padding: 0.8rem;
     width: 80vw;
+    border: 2px solid $primary-color;
+    margin-bottom: 1rem;
+}
 
+.gig-dates h4 {
+    display: inline-block;
+    border-bottom: 2px solid $accent-color;
 }
 
 .concert-dates details {
-    font-weight: 300;
+    font-weight: 400;
     cursor: pointer;
-
-
 }
 
 .concert-dates details summary {
-    color: $text-color;
+    padding-top: 0.5rem;
+    color: $text-color-light;
+    list-style: none;
+    font-size: 1.2rem;
+    max-width: 100%;
+}
 
+.concert-dates details summary:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f05a";
+    font-weight: 900;
+    padding-right: 1rem;
 }
 
 .concert-dates details .gig-info {
@@ -298,7 +319,6 @@ header {
 
 footer {
     width: 100%;
-    height: auto;
     color: $text-color;
     background-color: $secondary-color;
     display: flex;
