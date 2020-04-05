@@ -326,6 +326,7 @@ footer {
     justify-content: center;
     align-items: center;
     padding-bottom: 1rem;
+    margin-top: 2rem;
 }
 
 footer social {
@@ -398,4 +399,31 @@ footer .social-icons {
     border: none;
     height: 80px;
     width: 100%;
+}
+
+
+.contact-info {
+    color: $primary-color;
+}
+
+.contact-form {
+    margin-top: 2rem;
+    padding: 1rem;
+    border: 1px solid $primary-color;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    font-weight: 700;
+}
+
+.contact-form input {
+    margin: 1rem 0;
+}
+
+.contact-form #submit {
+    width: 30%;
+    padding: 0.5rem;
+    border-radius: 5px;
 }
