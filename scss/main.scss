@@ -35,6 +35,10 @@ html {
     height: 100%;
 }
 
+.desktop {
+    display: none;
+}
+
 .landing-wrapper {
     height: 100%;
     background-color: $secondary-color;
@@ -86,6 +90,8 @@ header {
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
+
+
 
 .nav-links {
     position: absolute;
@@ -206,9 +212,10 @@ header {
 }
 
 .news-heading {
+    font-size: 3rem;
     color: $text-color;
     text-transform: uppercase;
-    padding: 1rem;
+    margin: 2rem 0;
 }
 
 .article-wrapper {
@@ -286,14 +293,84 @@ header {
 }
 
 .concert-dates ul .gig-dates {
+    position: relative;
     display: flex;
-    color: $text-color-light;
+    // color: $text-color-light;
     font-weight: bold;
     width: 100%;
     margin-bottom: 1rem;
     -webkit-box-shadow: 2px 2px 3px 1px rgba(125, 125, 125, 1);
     -moz-box-shadow: 2px 2px 3px 1px rgba(125, 125, 125, 1);
     box-shadow: 2px 2px 3px 1px rgb(19, 19, 19);
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.gig-dates a {
+    color: $text-color;
+}
+
+.gig-dates .overlay {
+    position: absolute;
+    background-color: $primary-color;
+    height: 100%;
+    width: 60%;
+    top: 0;
+    right: -60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease-in-out;
+}
+
+.overlay a {
+    color: $secondary-color;
+    text-decoration: none;
+    border-bottom: 3px solid $accent-color;
+    transition: all 0.3s ease-in-out;
+}
+
+.overlay a:hover {
+    padding: 1rem;
+    color: $primary-color;
+    background-color: $accent-color;
+    text-decoration: none;
+    border-bottom: 5px solid $secondary-color;
+}
+
+.gig-dates .overlay-toggle {
+    position: absolute;
+    background-color: $accent-color;
+    color: $secondary-color;
+    height: 100%;
+    width: 10%;
+    top: 0;
+    right: 0;
+    transition: all 1s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gig-dates .overlay-toggle i {
+    font-size: minma;
+    transition: all 1s ease-in-out;
+}
+
+.toggle {
+    display: none;
+}
+
+.toggle:checked+.overlay-toggle {
+    right: 60%;
+}
+
+.toggle:checked+.overlay-toggle>i {
+    transform: rotate(180deg);
+}
+
+.toggle:checked~.overlay {
+    right: 0;
 }
 
 .ticket-img {
@@ -301,6 +378,7 @@ header {
     justify-content: center;
     align-items: center;
     background-color: $accent-color;
+    width: 30%;
 }
 
 .ticket-img i {
@@ -316,6 +394,13 @@ header {
     flex: auto;
     background-color: $primary-color;
     color: $text-color;
+}
+
+.ticket-info a {
+    background-color: $secondary-color;
+    padding: 0.2rem;
+    color: $text-color-light;
+    text-decoration: none;
 }
 
 footer {
@@ -442,6 +527,9 @@ footer .social-icons {
     width: 100%;
 }
 
+.desktop {
+    display: none !important;
+}
 
 @media screen and (min-width: 1000px) {
 
@@ -462,13 +550,23 @@ footer .social-icons {
     }
 
     .article-wrapper {
+        min-height: 100vh;
         flex-direction: row;
         justify-content: space-around;
+        align-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .news-heading {
+        font-size: 3rem;
+        margin: 3rem 0;
+
     }
 
     .news .card {
         flex-direction: row;
         width: 40vw;
+        min-height: 40vh;
         -webkit-box-shadow: 2px 2px 3px 1px rgba(125, 125, 125, 1);
         -moz-box-shadow: 2px 2px 3px 1px rgba(125, 125, 125, 1);
         box-shadow: 2px 2px 3px 1px rgba(125, 125, 125, 1);
@@ -479,9 +577,33 @@ footer .social-icons {
         height: 100%;
     }
 
+    .concert-dates .gig-card {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .concert-dates ul .gig-dates {
+        width: 20vw;
+        margin-bottom: 3rem;
+    }
+
+    .gig-dates .overlay-toggle i {
+        font-size: 2rem;
+    }
+
     .photos-wrapper img {
         width: 30vw;
         height: 30vw;
         object-fit: cover;
+    }
+
+    .contact-form {
+        width: 40vw;
+    }
+
+    .desktop {
+        display: flex !important;
     }
 }
