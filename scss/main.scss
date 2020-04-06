@@ -437,3 +437,23 @@ footer .social-icons {
 .photos-wrapper img {
     width: 100%;
 }
+
+
+@media screen and (min-width: 1000px) {
+
+    header nav {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-links {
+        position: relative;
+        width: auto;
+        height: auto;
+        display: flex;
+    }
+
+    .nav-links .social-icons {
+        display: none;
+    }
+}
