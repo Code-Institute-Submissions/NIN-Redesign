@@ -11,7 +11,7 @@
     </head>
 
     <body>
-        <div class="landing-wrapper landing">
+        <div class="landing-wrapper">
             <!-- header -->
             <header>
                 <!-- logo -->
@@ -49,218 +49,175 @@
             <!-- /header -->
             <!-- hero -->
             <section class="hero">
+                <h1>Ghosts V-VI</h1>
                 <div class="cta-wrapper">
-                    <h1>Ghosts V-VI</h1>
                     <h3>26-03-2020</h3>
                     <div class="btn-wrapper">
                         <a href="https://open.spotify.com/album/28DJ00Yr5oOhH0uOUgTQwc?si=hmAHkJZiSBu7-HP0B1ZJhA"
                             class="btn btn-listen">Listen <i class="fab fa-spotify"></i></a>
                     </div>
                 </div>
+                <aside id="spotify-play">
+                    <iframe class="desktop hero-play" src="https://open.spotify.com/embed/album/296zqVG4gI7mDSUD0CytXM"
+                        width="300" height="380" frameborder="0" allowtransparency="true"
+                        allow="encrypted-media"></iframe>
+                </aside>
             </section>
+            <img class="hero-background" src="/assets/img/Ghosts_portrait_MAR25_FIN1_web.jpg" alt="">
             <!-- hero -->
         </div>
         <!-- news section -->
-        <section class=" news">
-            <h2 class="news-heading">News</h2>
-            <div class="article-wrapper">
-                <div class="card">
-                    <img src="./assets/img//ghosts_V-VI_Tracklistings.jpg" alt="" class="news-img">
-                    <article>
-                        <h3>Ghosts V-VI out now </h3>
-                        <h4>Stream or free download</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo mollitia, reprehenderit
-                            qui </p>
+        <div class="page-wrapper">
+            <section class="news">
+                <h2 class="heading text-dark">News</h2>
+                <div class="article-wrapper">
+                    <article class="card">
+                        <img src="./assets/img/reznor.jpg" alt="" class="news-img" loading="lazy">
+                        <div>
+                            <h3>Ghosts V-VI out now </h3>
+                            <h4>Stream or free download</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo mollitia,
+                                reprehenderit qui </p>
+                        </div>
                     </article>
+                    <div class="card">
+                        <img loading="lazy" src="./assets/img/nin-concert.jpg" alt="" class="news-img">
+                        <article>
+                            <h3>New tour dates announced</h3>
+                            <h4>Tickets on sale now</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo mollitia,
+                                reprehenderit qui </p>
+                        </article>
+                    </div>
+                    <div class="card desktop">
+                        <img src="./assets/img/reznor.jpg" alt="" class="news-img">
+                        <article>
+                            <h3>Ghosts V-VI out now </h3>
+                            <h4>Stream or free download</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo mollitia,
+                                reprehenderit qui </p>
+                        </article>
+                    </div>
+                    <div class="card desktop">
+                        <img src="./assets/img/nin-concert.jpg" alt="" class="news-img">
+                        <article>
+                            <h3>New tour dates announced</h3>
+                            <h4>Tickets on sale now</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo mollitia,
+                                reprehenderit qui </p>
+                        </article>
+                    </div>
                 </div>
-                <div class="card">
-                    <img src="./assets/img/nin-concert.jpg" alt="" class="news-img">
-                    <article>
-                        <h3>New tour dates announced</h3>
-                        <h4>Tickets on sale now</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo mollitia, reprehenderit
-                            qui </p>
-                    </article>
-                </div>
-                <div class="card desktop">
-                    <img src="./assets/img//ghosts_V-VI_Tracklistings.jpg" alt="" class="news-img">
-                    <article>
-                        <h3>Ghosts V-VI out now </h3>
-                        <h4>Stream or free download</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo mollitia, reprehenderit
-                            qui </p>
-                    </article>
-                </div>
-                <div class="card desktop">
-                    <img src="./assets/img/nin-concert.jpg" alt="" class="news-img">
-                    <article>
-                        <h3>New tour dates announced</h3>
-                        <h4>Tickets on sale now</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo mollitia, reprehenderit
-                            qui </p>
-                    </article>
-                </div>
-            </div>
-        </section>
-        <!-- /news section -->
-        <!-- gigs -->
-        <section class="concert-dates">
-            <h2>Tour Dates</h2>
-            <ul class="gig-card">
-                <li class="gig-dates">
-                    <input type="checkbox" id="gig-toggle1" class="toggle">
-                    <label for="gig-toggle1" class="overlay-toggle"><i class="fas fa-arrow-alt-circle-left"></i></label>
-                    <div class="overlay">
-                        <a href="http://">Buy Ticket</a>
+            </section>
+            <!-- /news section -->
+            <!-- gigs -->
+            <section class="concert-dates">
+                <h2 class="heading text-light">Tour Dates</h2>
+                <ul class="tour-list">
+                    <div class="tour-item list-heading">
+                        <h3>Date</h3>
+                        <h3>Venue</h3>
+                        <h3>City</h3>
+                        <h3>Ticket</h3>
                     </div>
-                    <div class="ticket-img">
-                        <i class="fas fa-ticket-alt"></i>
-                    </div>
-                    <div class="ticket-info">
-                        <h4><span>05/07/20</span> London</h4>
-                        <p>Venue: KOKO</p>
-                        <p>Doors: 7pm</p>
-                        <a href="http://">Venue Details</a>
-                    </div>
-                </li>
-                <li class="gig-dates">
-                    <input type="checkbox" id="gig-toggle2" class="toggle">
-                    <label for="gig-toggle2" class="overlay-toggle"><i class="fas fa-arrow-alt-circle-left"></i></label>
-                    <div class="overlay">
-                        <a href="http://">Buy Ticket</a>
-                    </div>
-                    <div class="ticket-img">
-                        <i class="fas fa-ticket-alt"></i>
-                    </div>
-                    <div class="ticket-info">
-                        <h4><span>05/07/20</span> London</h4>
-                        <p>Venue: KOKO</p>
-                        <p>Doors: 7pm</p>
-                        <a href="http://">Venue Details</a>
-                    </div>
-                </li>
-                <li class="gig-dates">
-                    <input type="checkbox" id="gig-toggle3" class="toggle">
-                    <label for="gig-toggle3" class="overlay-toggle"><i class="fas fa-arrow-alt-circle-left"></i></label>
-                    <div class="overlay">
-                        <a href="http://">Buy Ticket</a>
-                    </div>
-                    <div class="ticket-img">
-                        <i class="fas fa-ticket-alt"></i>
-                    </div>
-                    <div class="ticket-info">
-                        <h4><span>05/07/20</span> London</h4>
-                        <p>Venue: KOKO</p>
-                        <p>Doors: 7pm</p>
-                        <a href="http://">Venue Details</a>
-                    </div>
-                </li>
-                <li class="gig-dates desktop">
-                    <input type="checkbox" id="gig-toggle1" class="toggle">
-                    <label for="gig-toggle1" class="overlay-toggle"><i class="fas fa-arrow-alt-circle-left"></i></label>
-                    <div class="overlay">
-                        <a href="http://">Buy Ticket</a>
-                    </div>
-                    <div class="ticket-img">
-                        <i class="fas fa-ticket-alt"></i>
-                    </div>
-                    <div class="ticket-info">
-                        <h4><span>05/07/20</span> London</h4>
-                        <p>Venue: KOKO</p>
-                        <p>Doors: 7pm</p>
-                        <a href="http://">Venue Details</a>
-                    </div>
-                </li>
-                <li class="gig-dates desktop">
-                    <input type="checkbox" id="gig-toggle2" class="toggle">
-                    <label for="gig-toggle2" class="overlay-toggle"><i class="fas fa-arrow-alt-circle-left"></i></label>
-                    <div class="overlay">
-                        <a href="http://">Buy Ticket</a>
-                    </div>
-                    <div class="ticket-img">
-                        <i class="fas fa-ticket-alt"></i>
-                    </div>
-                    <div class="ticket-info">
-                        <h4><span>05/07/20</span> London</h4>
-                        <p>Venue: KOKO</p>
-                        <p>Doors: 7pm</p>
-                        <a href="http://">Venue Details</a>
-                    </div>
-                </li>
-                <li class="gig-dates desktop">
-                    <input type="checkbox" id="gig-toggle3" class="toggle">
-                    <label for="gig-toggle3" class="overlay-toggle"><i class="fas fa-arrow-alt-circle-left"></i></label>
-                    <div class="overlay">
-                        <a href="http://">Buy Ticket</a>
-                    </div>
-                    <div class="ticket-img">
-                        <i class="fas fa-ticket-alt"></i>
-                    </div>
-                    <div class="ticket-info">
-                        <h4><span>05/07/20</span> London</h4>
-                        <p>Venue: KOKO</p>
-                        <p>Doors: 7pm</p>
-                        <a href="http://">Venue Details</a>
-                    </div>
-                </li>
-                <li class="gig-dates desktop">
-                    <input type="checkbox" id="gig-toggle1" class="toggle">
-                    <label for="gig-toggle1" class="overlay-toggle"><i class="fas fa-arrow-alt-circle-left"></i></label>
-                    <div class="overlay">
-                        <a href="http://">Buy Ticket</a>
-                    </div>
-                    <div class="ticket-img">
-                        <i class="fas fa-ticket-alt"></i>
-                    </div>
-                    <div class="ticket-info">
-                        <h4><span>05/07/20</span> London</h4>
-                        <p>Venue: KOKO</p>
-                        <p>Doors: 7pm</p>
-                        <a href="http://">Venue Details</a>
-                    </div>
-                </li>
-                <li class="gig-dates desktop">
-                    <input type="checkbox" id="gig-toggle2" class="toggle">
-                    <label for="gig-toggle2" class="overlay-toggle"><i class="fas fa-arrow-alt-circle-left"></i></label>
-                    <div class="overlay">
-                        <a href="http://">Buy Ticket</a>
-                    </div>
-                    <div class="ticket-img">
-                        <i class="fas fa-ticket-alt"></i>
-                    </div>
-                    <div class="ticket-info">
-                        <h4><span>05/07/20</span> London</h4>
-                        <p>Venue: KOKO</p>
-                        <p>Doors: 7pm</p>
-                        <a href="http://">Venue Details</a>
-                    </div>
-                </li>
-                <li class="gig-dates desktop">
-                    <input type="checkbox" id="gig-toggle3" class="toggle">
-                    <label for="gig-toggle3" class="overlay-toggle"><i class="fas fa-arrow-alt-circle-left"></i></label>
-                    <div class="overlay">
-                        <a href="http://">Buy Ticket</a>
-                    </div>
-                    <div class="ticket-img">
-                        <i class="fas fa-ticket-alt"></i>
-                    </div>
-                    <div class="ticket-info">
-                        <h4><span>05/07/20</span> London</h4>
-                        <p>Venue: KOKO</p>
-                        <p>Doors: 7pm</p>
-                        <a href="http://">Venue Details</a>
-                    </div>
-                </li>
-            </ul>
-        </section>
+                    </li>
+                    <li>
+                        <div class="tour-item">
+                            <div class="date-grid">
+                                <h2>27</h2>
+                                <div class="mon-year">
+                                    <h3>APR</h3>
+                                    <h4>2020</h4>
+                                </div>
+                            </div>
+                            <div class="venue-grid">Koko</div>
+                            <div class="city-grid">London, UK</div>
+                            <div class="ticket-grid"><a
+                                    href="https://www.ticketmaster.com/nine-inch-nails-tickets/artist/735762"
+                                    class="buy-ticket" target="_blank"><i class="fas fa-ticket-alt    "></i></a></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="tour-item">
+                            <div class="date-grid">
+                                <h2>27</h2>
+                                <div class="mon-year">
+                                    <h3>APR</h3>
+                                    <h4>2020</h4>
+                                </div>
+                            </div>
+                            <div class="venue-grid">Koko</div>
+                            <div class="city-grid">London, UK</div>
+                            <div class="ticket-grid"><a
+                                    href="https://www.ticketmaster.com/nine-inch-nails-tickets/artist/735762"
+                                    class="buy-ticket" target="_blank"><i class="fas fa-ticket-alt    "></i></a></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="tour-item">
+                            <div class="date-grid">
+                                <h2>27</h2>
+                                <div class="mon-year">
+                                    <h3>APR</h3>
+                                    <h4>2020</h4>
+                                </div>
+                            </div>
+                            <div class="venue-grid">Koko</div>
+                            <div class="city-grid">London, UK</div>
+                            <div class="ticket-grid"><a
+                                    href="https://www.ticketmaster.com/nine-inch-nails-tickets/artist/735762"
+                                    class="buy-ticket" target="_blank"><i class="fas fa-ticket-alt"></i></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="tour-item">
+                            <div class="date-grid">
+                                <h2>27</h2>
+                                <div class="mon-year">
+                                    <h3>APR</h3>
+                                    <h4>2020</h4>
+                                </div>
+                            </div>
+                            <div class="venue-grid">Koko</div>
+                            <div class="city-grid">London, UK</div>
+                            <div class="ticket-grid"><a
+                                    href="https://www.ticketmaster.com/nine-inch-nails-tickets/artist/735762"
+                                    class="buy-ticket" target="_blank"><i class="fas fa-ticket-alt    "></i></a></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="tour-item">
+                            <div class="date-grid">
+                                <h2>27</h2>
+                                <div class="mon-year">
+                                    <h3>APR</h3>
+                                    <h4>2020</h4>
+                                </div>
+                            </div>
+                            <div class="venue-grid">Koko</div>
+                            <div class="city-grid">London, UK</div>
+                            <div class="ticket-grid"><a
+                                    href="https://www.ticketmaster.com/nine-inch-nails-tickets/artist/735762"
+                                    class="buy-ticket" target="_blank"><i class="fas fa-ticket-alt    "></i></a></div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </div>
         <!-- /gigs -->
         <!-- footer -->
         <footer>
             <social>
-                <a class="social-icons" href="https://www.spotify.com"><i class="fab fa-spotify    "></i></a>
-                <a class="social-icons" href="https://www.facebook.com"><i class="fab fa-facebook    "></i></a>
-                <a class="social-icons" href="https://www.twitter.com"><i class="fab fa-twitter    "></i></a>
-                <a class="social-icons" href="https://www.itunes.com"><i class="fab fa-itunes    "></i></a>
+                <a class="social-icons"
+                    href="https://open.spotify.com/artist/0X380XXQSNBYuleKzav5UO?si=O2BuWwgAQrmG7sIR4UwLOQ"
+                    target="_blank"><i class="fab fa-spotify    "></i></a>
+                <a class="social-icons" href="https://www.facebook.com/ninofficial/" target="_blank"><i
+                        class="fab fa-facebook"></i></a>
+                <a class="social-icons" href="https://twitter.com/nineinchnails?lang=en" target="_blank"><i
+                        class="fab fa-twitter    "></i></a>
+                <a class="social-icons" href="https://music.apple.com/us/artist/nine-inch-nails/107917"
+                    target="_blank"><i class="fab fa-itunes    "></i></a>
             </social>
             <div class="copy"> Copyright &copy 2020 </div>
         </footer>

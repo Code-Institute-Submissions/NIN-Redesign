@@ -23,33 +23,25 @@ html {
   height: 100%;
 }
 
-.desktop {
-  display: none;
+.heading {
+  font-size: 3rem;
+  color: #3c474b;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 4rem auto;
+}
+
+.text-light {
+  color: #eaf6f6;
+}
+
+.text-dark {
+  color: #100c08;
 }
 
 .landing-wrapper {
   height: 100%;
   background-color: #100c08;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.landing::before {
-  content: ' ';
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: url("../img/Ghosts_portrait_MAR25_FIN1_web.jpg") no-repeat center center/cover;
 }
 
 header {
@@ -74,6 +66,7 @@ header {
   height: 3rem;
   width: auto;
   margin: 1rem;
+  margin-left: 5vw;
   -webkit-filter: invert(80%);
           filter: invert(80%);
   z-index: inherit;
@@ -140,68 +133,71 @@ header {
 }
 
 .hero {
-  z-index: 2;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: max-content;
+      grid-template-columns: -webkit-max-content;
+      grid-template-columns: max-content;
+  -ms-grid-rows: (1fr)[5];
+      grid-template-rows: repeat(5, 1fr);
+  height: 100%;
+  padding: 0 5vw;
+}
+
+.hero #spotify-play {
+  z-index: 1;
+  display: none;
 }
 
 .cta-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  z-index: inherit;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 4rem;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -ms-grid-row: 4;
+  grid-row: 4;
+  z-index: 1;
 }
 
-.cta-wrapper h1 {
-  text-align: center;
-  font-size: 2rem;
-  padding-bottom: 1rem;
+.hero h1 {
+  -ms-grid-row: 3;
+  grid-row: 3;
+  font-size: 3rem;
   font-weight: bold;
   text-transform: uppercase;
-  z-index: inherit;
+  margin: 0;
+  z-index: 1;
 }
 
-.cta-wrapper h3 {
-  text-align: center;
+.hero h3 {
+  -ms-grid-row: 5;
+  grid-row: 5;
   padding-bottom: 1rem;
   text-transform: uppercase;
-  z-index: inherit;
+  z-index: 1;
 }
 
 .btn-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .btn {
   text-decoration: none;
-  display: inline-block;
   border: 1px solid #eaf6f6;
   padding: 0.5rem;
-  width: 6.5rem;
   background: rgba(0, 0, 0, 0.1);
   text-align: center;
   color: #eaf6f6;
-  z-index: inherit;
-  margin: 0 1rem;
   font-weight: bold;
   text-transform: uppercase;
   cursor: pointer;
@@ -214,8 +210,27 @@ header {
   color: #100c08;
 }
 
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 0;
+}
+
+.page-wrapper {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  -ms-grid-rows: (max-content)[3];
+      grid-template-rows: repeat(3, -webkit-max-content);
+      grid-template-rows: repeat(3, max-content);
+}
+
 .news {
-  padding: 1rem;
   background-color: #eaf6f6;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -224,54 +239,35 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   height: auto;
-}
-
-.news-heading {
-  font-size: 3rem;
-  color: #3c474b;
-  text-transform: uppercase;
-  margin: 2rem 0;
+  padding: 0 5vw 4rem 5vw;
 }
 
 .article-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: (1fr)[auto-fit];
+      grid-template-rows: repeat(auto-fit, 1fr);
+  gap: 1rem;
 }
 
 .news .card {
-  -webkit-box-flex: 1;
-      -ms-flex: auto;
-          flex: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: -ms-grid;
+  display: grid;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   background-color: #eaf6f6;
-  margin: 1rem;
+  margin: 0 auto;
   border-radius: 5px;
   -webkit-box-shadow: 2px 2px 3px 1px #7d7d7d;
   box-shadow: 2px 2px 3px 1px #7d7d7d;
+}
+
+.news .desktop {
+  display: none;
 }
 
 .news .card h3 {
@@ -294,7 +290,7 @@ header {
   line-height: 1.5rem;
   color: #3c474b;
   text-align: justify;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .news-img {
@@ -302,9 +298,11 @@ header {
 }
 
 .concert-dates {
+  padding: 0 5vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-bottom: 4rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -312,147 +310,45 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1rem;
-  width: 100%;
   color: #eaf6f6;
   background: url("../img/tom-rogerson-8bYoi9UGglU-unsplash.jpg") no-repeat center center/cover;
 }
 
-.concert-dates h2 {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  color: #eaf6f6;
-  text-transform: uppercase;
-  padding: 1rem;
-}
-
-.concert-dates ul {
+.concert-dates .tour-list {
+  display: -ms-grid;
+  display: grid;
+  gap: 1rem;
   list-style: none;
-  margin-bottom: 8rem;
   width: 100%;
 }
 
-.concert-dates ul .gig-dates {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-weight: bold;
-  width: 100%;
-  margin-bottom: 1rem;
-  -webkit-box-shadow: 2px 2px 3px 1px #7d7d7d;
-  box-shadow: 2px 2px 3px 1px #131313;
-  overflow: hidden;
-  border-radius: 5px;
+.tour-list .tour-item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: #161616;
 }
 
-.gig-dates a {
-  color: #3c474b;
+.tour-list .list-heading h3 {
+  text-align: center;
 }
 
-.gig-dates .overlay {
-  position: absolute;
-  background-color: #eaf6f6;
-  height: 100%;
-  width: 60%;
-  top: 0;
-  right: -60%;
+.tour-item .date-grid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-right: 1rem;
+  background-color: #303030;
 }
 
-.overlay a {
-  color: #100c08;
-  text-decoration: none;
-  border-bottom: 3px solid #ce050f;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-.overlay a:hover {
-  padding: 1rem;
-  color: #eaf6f6;
-  background-color: #ce050f;
-  text-decoration: none;
-  border-bottom: 5px solid #100c08;
-}
-
-.gig-dates .overlay-toggle {
-  position: absolute;
-  background-color: #ce050f;
-  color: #100c08;
-  height: 100%;
-  width: 10%;
-  top: 0;
-  right: 0;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.gig-dates .overlay-toggle i {
-  font-size: minma;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-}
-
-.toggle {
-  display: none;
-}
-
-.toggle:checked + .overlay-toggle {
-  right: 60%;
-}
-
-.toggle:checked + .overlay-toggle > i {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
-
-.toggle:checked ~ .overlay {
-  right: 0;
-}
-
-.ticket-img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #ce050f;
-  width: 30%;
-}
-
-.ticket-img i {
-  padding: 1rem;
-  font-size: 4rem;
-  color: #100c08;
-}
-
-.ticket-info {
-  padding: 1rem;
+.date-grid .mon-year {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -460,18 +356,49 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-flex: 1;
-      -ms-flex: auto;
-          flex: auto;
-  background-color: #eaf6f6;
-  color: #3c474b;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-top: 0;
 }
 
-.ticket-info a {
-  background-color: #100c08;
-  padding: 0.2rem;
-  color: #fcfafc;
-  text-decoration: none;
+.tour-item .date-grid h2 {
+  font-size: 2rem;
+  line-height: 0.8;
+  font-weight: 800;
+  padding-right: 0.5rem;
+}
+
+.tour-item .date-grid h3,
+.tour-item .date-grid h4 {
+  font-weight: 500;
+  font-size: 0.6rem;
+  line-height: 1;
+}
+
+.tour-item .venue-grid,
+.tour-item .city-grid,
+.tour-item .ticket-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-left: 3px solid #eaf6f6;
+  padding: 0 0.5rem;
+  font-weight: 700;
+}
+
+.city-grid {
+  background-color: #303030;
+}
+
+.ticket-grid .buy-ticket {
+  color: #eaf6f6;
 }
 
 footer {
@@ -525,8 +452,8 @@ footer .social-icons {
 
 .content-wrapper {
   padding-top: 6rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 
 .band-info .band-img {
@@ -535,18 +462,18 @@ footer .social-icons {
 }
 
 .band-info .band-article {
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 .band-info .band-article p {
-  padding-bottom: 0.5rem;
+  padding: 0.5rem;
   line-height: 1.8rem;
   color: #eaf6f6;
 }
 
 .disco-wrapper {
-  padding: calc(1rem + 1vw);
-  padding-top: 6rem;
+  padding: 5vw;
+  padding-top: 8rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
@@ -564,12 +491,6 @@ footer .social-icons {
 }
 
 .album-info img {
-  width: 100%;
-}
-
-.album-info iframe {
-  border: none;
-  height: 80px;
   width: 100%;
 }
 
@@ -621,8 +542,8 @@ footer .social-icons {
   width: 100%;
 }
 
-.desktop {
-  display: none !important;
+.news .card .desktop {
+  display: none;
 }
 
 @media screen and (min-width: 1000px) {
@@ -645,57 +566,20 @@ footer .social-icons {
   .nav-links .social-icons {
     display: none;
   }
-  .article-wrapper {
-    min-height: 100vh;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -ms-flex-line-pack: distribute;
-        align-content: space-around;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+  .hero {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
   }
-  .news-heading {
-    font-size: 3rem;
-    margin: 3rem 0;
-  }
-  .news .card {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    width: 40vw;
-    min-height: 40vh;
-    -webkit-box-shadow: 2px 2px 3px 1px #7d7d7d;
-    box-shadow: 2px 2px 3px 1px #7d7d7d;
-  }
-  .news-img {
-    width: 50%;
-    height: 100%;
-  }
-  .concert-dates .gig-card {
+  .hero #spotify-play {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 2;
+    grid-row: 3 / span 2;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .concert-dates ul .gig-dates {
-    width: 20vw;
-    margin-bottom: 3rem;
-  }
-  .gig-dates .overlay-toggle i {
-    font-size: 2rem;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
   .photos-wrapper img {
     width: 30vw;
@@ -706,10 +590,13 @@ footer .social-icons {
   .contact-form {
     width: 40vw;
   }
-  .desktop {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
+  .news .desktop {
+    display: -ms-grid;
+    display: grid;
+  }
+  .news .card {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
   }
 }
 /*# sourceMappingURL=main.css.map */
