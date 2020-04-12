@@ -11,52 +11,48 @@
     </head>
 
     <body>
-        <div class="wrapper">
-            <!-- header -->
-            <header>
-                <!-- logo -->
-                <a href="./index.html"><img class="logo" src="./assets/img/Nine_Inch_Nails_logo.svg" alt=""></a>
-                <!-- /logo -->
-                <!-- navigation -->
-                <nav>
-                    <input id="menu" type="checkbox">
-                    <label id="menu-toggle" for="menu"><i class="fas fa-bars"></i></label>
-                    <ul class="nav-links">
-                        <li class="nav-item"><a href="./index.html">Home</a></li>
-                        <li class="nav-item"><a href="./discography.html">Discography</a></li>
-                        <li class="nav-item"><a href="./media.html">Media</a></li>
-                        <li class="nav-item"><a href="./about.html">About</a></li>
-                        <li class="nav-item"><a href="./contact.html">Contact</a></li>
-                        <li class="nav-item">
-                            <a class="social-icons" href="https://www.spotify.com"><i
-                                    class="fab fa-spotify    "></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="social-icons" href="https://www.facebook.com"><i
-                                    class="fab fa-facebook    "></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="social-icons" href="https://www.twitter.com"><i
-                                    class="fab fa-twitter    "></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="social-icons" href="https://www.itunes.com"><i class="fab fa-itunes    "></i></a>
-                        </li>
-                    </ul>
-                </nav>
-                <!-- /navigation -->
-            </header>
-            <!-- /header -->
-            <main class="contact-wrapper content-wrapper">
-                <p class="contact-info">To get in contact with the band for bookings, or media engagement etc. please
-                    fill out the form below, and we will be in contact.</p>
+        <!-- header -->
+        <header>
+            <!-- logo -->
+            <a href="./index.html"><img class="logo" src="./assets/img/Nine_Inch_Nails_logo.svg" alt=""></a>
+            <!-- /logo -->
+            <!-- navigation -->
+            <nav>
+                <input id="menu" type="checkbox">
+                <label id="menu-toggle" for="menu"><i class="fas fa-bars"></i></label>
+                <ul class="nav-links">
+                    <li class="nav-item"><a href="./index.html">Home</a></li>
+                    <li class="nav-item"><a href="./discography.html">Discography</a></li>
+                    <li class="nav-item"><a href="./media.html">Media</a></li>
+                    <li class="nav-item"><a href="./about.html">About</a></li>
+                    <li class="nav-item"><a href="./contact.html">Contact</a></li>
+                    <li class="nav-item">
+                        <a class="social-icons" href="https://www.spotify.com"><i class="fab fa-spotify    "></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="social-icons" href="https://www.facebook.com"><i class="fab fa-facebook    "></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="social-icons" href="https://www.twitter.com"><i class="fab fa-twitter    "></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="social-icons" href="https://www.itunes.com"><i class="fab fa-itunes    "></i></a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- /navigation -->
+        </header>
+        <!-- /header -->
+        <div class="grid-wrapper content-wrapper">
+            <main class="form-wrapper">
+                <h3 class="contact-heading">Contact Form</h3>
                 <form action="" class="contact-form">
                     <label for="name">Name:</label>
                     <input type="text" name="name" id="form-name" placeholder="Full Name">
                     <label for="email">Email Address:</label>
                     <input type="email" name="email" id="form-email" placeholder="Contact Email">
                     <label for="phone">Contact Number:</label>
-                    <input type="number" name="phone" id="form-phone" placeholder="Best Contact Number">
+                    <input type="tel" name="phone" id="form-phone" placeholder="Best Contact Number">
                     <label for="location">Venue Location</label>
                     <input type="text" name="location" id="form-location" placeholder="Location of Venue">
                     <label for="date">Proposed Date:</label>
@@ -67,17 +63,111 @@
                     <input id="submit" type="submit" value="Submit">
                 </form>
             </main>
-            <!-- footer -->
-            <footer>
-                <social>
-                    <a class="social-icons" href="https://www.spotify.com"><i class="fab fa-spotify    "></i></a>
-                    <a class="social-icons" href="https://www.facebook.com"><i class="fab fa-facebook    "></i></a>
-                    <a class="social-icons" href="https://www.twitter.com"><i class="fab fa-twitter    "></i></a>
-                    <a class="social-icons" href="https://www.itunes.com"><i class="fab fa-itunes    "></i></a>
-                </social>
-                <div class="copy"> Copyright &copy 2020 </div>
-            </footer>
-            <!-- /footer -->
+            <section class="concert-dates desktop">
+                <h3 class="contact-heading">Existing tour dates:</h3>
+                <ul class="tour-list">
+                    <div class="tour-item list-heading">
+                        <h3>Date</h3>
+                        <h3>Venue</h3>
+                        <h3>City</h3>
+                        <h3>Ticket</h3>
+                    </div>
+                    </li>
+                    <li>
+                        <div class="tour-item">
+                            <div class="date-grid">
+                                <h2>27</h2>
+                                <div class="mon-year">
+                                    <h3>APR</h3>
+                                    <h4>2020</h4>
+                                </div>
+                            </div>
+                            <div class="venue-grid">Koko</div>
+                            <div class="city-grid">London, UK</div>
+                            <div class="ticket-grid"><a
+                                    href="https://www.ticketmaster.com/nine-inch-nails-tickets/artist/735762"
+                                    class="buy-ticket" target="_blank"><i class="fas fa-ticket-alt    "></i></a></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="tour-item">
+                            <div class="date-grid">
+                                <h2>27</h2>
+                                <div class="mon-year">
+                                    <h3>APR</h3>
+                                    <h4>2020</h4>
+                                </div>
+                            </div>
+                            <div class="venue-grid">Koko</div>
+                            <div class="city-grid">London, UK</div>
+                            <div class="ticket-grid"><a
+                                    href="https://www.ticketmaster.com/nine-inch-nails-tickets/artist/735762"
+                                    class="buy-ticket" target="_blank"><i class="fas fa-ticket-alt    "></i></a></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="tour-item">
+                            <div class="date-grid">
+                                <h2>27</h2>
+                                <div class="mon-year">
+                                    <h3>APR</h3>
+                                    <h4>2020</h4>
+                                </div>
+                            </div>
+                            <div class="venue-grid">Koko</div>
+                            <div class="city-grid">London, UK</div>
+                            <div class="ticket-grid"><a
+                                    href="https://www.ticketmaster.com/nine-inch-nails-tickets/artist/735762"
+                                    class="buy-ticket" target="_blank"><i class="fas fa-ticket-alt"></i></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="tour-item">
+                            <div class="date-grid">
+                                <h2>27</h2>
+                                <div class="mon-year">
+                                    <h3>APR</h3>
+                                    <h4>2020</h4>
+                                </div>
+                            </div>
+                            <div class="venue-grid">Koko</div>
+                            <div class="city-grid">London, UK</div>
+                            <div class="ticket-grid"><a
+                                    href="https://www.ticketmaster.com/nine-inch-nails-tickets/artist/735762"
+                                    class="buy-ticket" target="_blank"><i class="fas fa-ticket-alt    "></i></a></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="tour-item">
+                            <div class="date-grid">
+                                <h2>27</h2>
+                                <div class="mon-year">
+                                    <h3>APR</h3>
+                                    <h4>2020</h4>
+                                </div>
+                            </div>
+                            <div class="venue-grid">Koko</div>
+                            <div class="city-grid">London, UK</div>
+                            <div class="ticket-grid"><a
+                                    href="https://www.ticketmaster.com/nine-inch-nails-tickets/artist/735762"
+                                    class="buy-ticket" target="_blank"><i class="fas fa-ticket-alt    "></i></a></div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <!-- footer -->
+        <footer>
+            <social>
+                <a class="social-icons" href="https://www.spotify.com"><i class="fab fa-spotify    "></i></a>
+                <a class="social-icons" href="https://www.facebook.com"><i class="fab fa-facebook    "></i></a>
+                <a class="social-icons" href="https://www.twitter.com"><i class="fab fa-twitter    "></i></a>
+                <a class="social-icons" href="https://www.itunes.com"><i class="fab fa-itunes    "></i></a>
+            </social>
+            <div class="copy"> Copyright &copy 2020 </div>
+        </footer>
+        <!-- /footer -->
     </body>
 
 </html>

@@ -14,7 +14,7 @@
 
 body {
   color: #eaf6f6;
-  background-color: #100c08;
+  background-color: #3c474b;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -41,7 +41,6 @@ html {
 
 .landing-wrapper {
   height: 100%;
-  background-color: #100c08;
 }
 
 header {
@@ -311,7 +310,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   color: #eaf6f6;
-  background: url("../img/tom-rogerson-8bYoi9UGglU-unsplash.jpg") no-repeat center center/cover;
+  background-color: #3c474b;
 }
 
 .concert-dates .tour-list {
@@ -390,7 +389,6 @@ header {
           justify-content: center;
   border-left: 3px solid #eaf6f6;
   padding: 0 0.5rem;
-  font-weight: 700;
 }
 
 .city-grid {
@@ -403,7 +401,7 @@ header {
 
 footer {
   width: 100%;
-  color: #3c474b;
+  color: #eaf6f6;
   background-color: #100c08;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -438,16 +436,11 @@ footer .social-icons {
   border-radius: 50%;
   padding: 1rem;
   font-size: 2rem;
-  color: #3c474b;
+  color: #eaf6f6;
 }
 
 .social-icons a {
   text-decoration: none;
-}
-
-.wrapper {
-  height: 100%;
-  background-color: #100c08;
 }
 
 .content-wrapper {
@@ -471,6 +464,14 @@ footer .social-icons {
   color: #eaf6f6;
 }
 
+.band-info hr {
+  height: 0.5rem;
+  width: 2rem;
+  background-color: #100c08;
+  margin: 0 auto;
+  border: none;
+}
+
 .disco-wrapper {
   padding: 5vw;
   padding-top: 8rem;
@@ -481,27 +482,41 @@ footer .social-icons {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .album-info {
-  max-width: 1000px;
+  max-width: 500px;
   overflow: hidden;
-  line-height: 0;
 }
 
 .album-info img {
   width: 100%;
 }
 
-.contact-info {
+.grid-wrapper {
+  margin-top: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.form-wrapper {
+  max-width: 768px;
+}
+
+.contact-heading {
   color: #eaf6f6;
+  word-wrap: break-word;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  margin-bottom: 1rem;
 }
 
 .contact-form {
-  margin-top: 2rem;
-  padding: 1rem;
-  border: 1px solid #eaf6f6;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -509,6 +524,7 @@ footer .social-icons {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  max-width: 768px;
 }
 
 .contact-form label {
@@ -516,7 +532,13 @@ footer .social-icons {
 }
 
 .contact-form input {
-  margin: 1rem 0;
+  margin: 1rem 0 2rem 0;
+  padding: 0.5rem;
+}
+
+.contact-form textarea {
+  margin: 1rem 0 2rem 0;
+  padding: 0.5rem;
 }
 
 .contact-form #submit {
@@ -542,7 +564,8 @@ footer .social-icons {
   width: 100%;
 }
 
-.news .card .desktop {
+.news .card .desktop,
+.grid-wrapper .desktop {
   display: none;
 }
 
@@ -587,12 +610,22 @@ footer .social-icons {
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .contact-form {
+  .form-wrapper {
     width: 40vw;
   }
   .news .desktop {
     display: -ms-grid;
     display: grid;
+  }
+  .grid-wrapper .desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
   }
   .news .card {
     -ms-grid-columns: 1fr 1fr;
