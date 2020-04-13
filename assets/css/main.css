@@ -428,7 +428,7 @@ footer {
   margin-top: 2rem;
 }
 
-footer social {
+footer .social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

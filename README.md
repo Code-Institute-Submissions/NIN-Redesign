@@ -94,3 +94,5 @@ To Deploy my project localy -
 ### Acknowledgements
 
 * Brad Traversy -  [Modern HTML and CSS from the beginning](https://www.udemy.com/course/modern-html-css-from-the-beginning/)
+* NIN website for images and inspiration
+* [CSSmatic](https://www.cssmatic.com/box-shadow)
