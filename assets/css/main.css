@@ -1,16 +1,10 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,regular,italic,600,600italic,700,700italic,800,800italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,regular,italic,600,600italic,700,700italic,800,800italicdisplay=fallback);
+
 
 * {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
-}
-
-@font-face {
-  font-family: "Font Awesome 5 Free";
-  src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/webfonts/fa-solid-900.woff");
 }
 
 body {
@@ -67,6 +61,7 @@ header {
   width: auto;
   margin: 1rem;
   margin-left: 5vw;
+  -webkit-filter: invert(100%);
   filter: invert(100%);
   z-index: inherit;
 
@@ -133,12 +128,14 @@ header {
 }
 
 .hero {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr;
   grid-template-columns: 1fr;
+  -ms-grid-rows: (1fr)[5];
   grid-template-rows: repeat(5, 1fr);
   height: 100%;
   padding: 0 5vw;
-  z-index: 1;
 }
 
 .hero #spotify-play {
@@ -169,6 +166,7 @@ header {
 
 .hero h1 {
   position: relative;
+  -ms-grid-row: 3;
   grid-row: 3;
   font-size: 3rem;
   font-weight: bold;
@@ -197,14 +195,12 @@ header {
 }
 
 .btn-wrapper {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .btn {
-  position: relative;
   text-decoration: none;
   border: 1px solid #eaf6f6;
   padding: 0.5rem;
@@ -239,6 +235,7 @@ header {
   display: grid;
   width: 100%;
   grid-template-rows: repeat(3, -webkit-max-content);
+  -ms-grid-rows: (max-content)[3];
   grid-template-rows: repeat(3, max-content);
 }
 
@@ -274,7 +271,6 @@ header {
   background-color: #eaf6f6;
   margin: 0 auto;
   border-radius: 5px;
-  -webkit-box-shadow: 2px 2px 3px 1px #7d7d7d;
   box-shadow: 2px 2px 3px 1px #7d7d7d;
 }
 
@@ -512,9 +508,15 @@ footer .social-icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
+  -webkit-box-pack: space-between;
+  -ms-flex-pack: space-between;
   justify-content: space-evenly;
+}
+
+@supports (-ms-accelerator: true) {
+  .grid-wrapper {
+    justify-content: space-between;
+  }
 }
 
 .form-wrapper {
@@ -524,7 +526,6 @@ footer .social-icons {
 .contact-heading {
   color: #eaf6f6;
   word-wrap: break-word;
-  -webkit-box-sizing: content-box;
   box-sizing: content-box;
   margin-bottom: 1rem;
 }
@@ -649,10 +650,10 @@ footer .social-icons {
     padding: 0;
   }
 
+
+
   .news .card {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
   }
 }
-
-/*# sourceMappingURL=main.css.map */
