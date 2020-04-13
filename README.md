@@ -24,11 +24,21 @@ Fans will be able to access Music, images and social media directly form the web
 
 ### Wireframes
 
+#### Mobile Wireframes
+
 ![wireframes](readme-files/X1.png)
 ![wireframes](readme-files/X2.png)
 ![wireframes](readme-files/X3.png)
 ![wireframes](readme-files/X4.png)
 ![wireframes](readme-files/X5.png)
+
+#### Desktop Wireframes
+
+![wireframes](readme-files/Desktop1.png)
+![wireframes](readme-files/Desktop2.png)
+![wireframes](readme-files/Desktop3.png)
+![wireframes](readme-files/Desktop4.png)
+![wireframes](readme-files/Desktop5.png)
 
 
 ## Features
