@@ -140,7 +140,7 @@ header {
 
 .hero {
     display: grid;
-    grid-template-columns: max-content;
+    grid-template-columns: 1fr;
     grid-template-rows: repeat(5, 1fr);
     height: 100%;
     padding: 0 5vw;
@@ -149,15 +149,17 @@ header {
 .hero #spotify-play {
     z-index: 1;
     display: none;
+
 }
 
 .cta-wrapper {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-content: flex-start;
-    grid-row: 4;
     z-index: 1;
+    grid-row: 4;
+    max-width: 80%;
 }
 
 .hero h1 {
@@ -166,15 +168,25 @@ header {
     font-size: 3rem;
     font-weight: bold;
     text-transform: uppercase;
-    margin: 0;
+    max-width: 300px;
     z-index: 1;
 }
 
-.hero h3 {
+.hero h1 span {
+    font-size: 4rem;
+}
+
+.hero p {
     grid-row: 5;
-    padding-bottom: 1rem;
+    line-height: 2;
+    font-weight: 600;
+    padding-bottom: 2rem;
     text-transform: uppercase;
     z-index: 1;
+}
+
+.hero p span {
+    font-size: 1.5rem;
 }
 
 .btn-wrapper {

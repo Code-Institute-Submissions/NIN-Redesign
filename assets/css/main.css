@@ -134,9 +134,8 @@ header {
 .hero {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: max-content;
-      grid-template-columns: -webkit-max-content;
-      grid-template-columns: max-content;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
   -ms-grid-rows: (1fr)[5];
       grid-template-rows: repeat(5, 1fr);
   height: 100%;
@@ -149,9 +148,9 @@ header {
 }
 
 .cta-wrapper {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -161,9 +160,10 @@ header {
           justify-content: flex-start;
   -ms-flex-line-pack: start;
       align-content: flex-start;
+  z-index: 1;
   -ms-grid-row: 4;
   grid-row: 4;
-  z-index: 1;
+  max-width: 80%;
 }
 
 .hero h1 {
@@ -172,16 +172,26 @@ header {
   font-size: 3rem;
   font-weight: bold;
   text-transform: uppercase;
-  margin: 0;
+  max-width: 300px;
   z-index: 1;
 }
 
-.hero h3 {
+.hero h1 span {
+  font-size: 4rem;
+}
+
+.hero p {
   -ms-grid-row: 5;
   grid-row: 5;
-  padding-bottom: 1rem;
+  line-height: 2;
+  font-weight: 600;
+  padding-bottom: 2rem;
   text-transform: uppercase;
   z-index: 1;
+}
+
+.hero p span {
+  font-size: 1.5rem;
 }
 
 .btn-wrapper {
