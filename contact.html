@@ -46,18 +46,18 @@
         <div class="grid-wrapper content-wrapper">
             <main class="form-wrapper">
                 <h3 class="contact-heading">Contact Form</h3>
-                <form action="" class="contact-form">
-                    <label for="name">Name:</label>
+                <form class="contact-form">
+                    <label for="form-name">Name:</label>
                     <input type="text" name="name" id="form-name" placeholder="Full Name">
-                    <label for="email">Email Address:</label>
+                    <label for="form-email">Email Address:</label>
                     <input type="email" name="email" id="form-email" placeholder="Contact Email">
-                    <label for="phone">Contact Number:</label>
+                    <label for="form-phone">Contact Number:</label>
                     <input type="tel" name="phone" id="form-phone" placeholder="Best Contact Number">
-                    <label for="location">Venue Location</label>
+                    <label for="form-location">Venue Location</label>
                     <input type="text" name="location" id="form-location" placeholder="Location of Venue">
-                    <label for="date">Proposed Date:</label>
-                    <input type="date" name="date" id="form-date" placeholder="Proposed Date">
-                    <label for="message">Further Details:</label>
+                    <label for="form-date">Proposed Date:</label>
+                    <input type="date" name="date" id="form-date">
+                    <label for="form-message">Further Details:</label>
                     <textarea name="message" id="form-message" cols="30" rows="10"
                         placeholder="Please provide as much information as possible"></textarea>
                     <input id="submit" type="submit" value="Submit">
@@ -66,12 +66,13 @@
             <section class="concert-dates desktop">
                 <h3 class="contact-heading">Existing tour dates:</h3>
                 <ul class="tour-list">
-                    <div class="tour-item list-heading">
-                        <h3>Date</h3>
-                        <h3>Venue</h3>
-                        <h3>City</h3>
-                        <h3>Ticket</h3>
-                    </div>
+                    <li>
+                        <div class="tour-item list-heading">
+                            <h3>Date</h3>
+                            <h3>Venue</h3>
+                            <h3>City</h3>
+                            <h3>Ticket</h3>
+                        </div>
                     </li>
                     <li>
                         <div class="tour-item">
@@ -159,13 +160,18 @@
         </div>
         <!-- footer -->
         <footer>
-            <social>
-                <a class="social-icons" href="https://www.spotify.com"><i class="fab fa-spotify    "></i></a>
-                <a class="social-icons" href="https://www.facebook.com"><i class="fab fa-facebook    "></i></a>
-                <a class="social-icons" href="https://www.twitter.com"><i class="fab fa-twitter    "></i></a>
-                <a class="social-icons" href="https://www.itunes.com"><i class="fab fa-itunes    "></i></a>
-            </social>
-            <div class="copy"> Copyright &copy 2020 </div>
+            <div class="social">
+                <a class="social-icons"
+                    href="https://open.spotify.com/artist/0X380XXQSNBYuleKzav5UO?si=O2BuWwgAQrmG7sIR4UwLOQ"
+                    target="_blank"><i class="fab fa-spotify    "></i></a>
+                <a class="social-icons" href="https://www.facebook.com/ninofficial/" target="_blank"><i
+                        class="fab fa-facebook"></i></a>
+                <a class="social-icons" href="https://twitter.com/nineinchnails?lang=en" target="_blank"><i
+                        class="fab fa-twitter    "></i></a>
+                <a class="social-icons" href="https://music.apple.com/us/artist/nine-inch-nails/107917"
+                    target="_blank"><i class="fab fa-itunes    "></i></a>
+            </div>
+            <div class="copy"> Copyright &copy; 2020 </div>
         </footer>
         <!-- /footer -->
     </body>
