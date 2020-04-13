@@ -8,7 +8,7 @@ With that in mind, I have included News, and tour dates on the main page. From t
 
 ### Mockups
 
-mockup image
+![Mockups](readme-files/mockups.png)
 
 ### User Stories
 
