@@ -333,8 +333,8 @@ header {
 .tour-list .tour-item {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   background-color: #161616;
 }
 
@@ -352,7 +352,7 @@ header {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  padding-right: 1rem;
+  padding: 1rem;
   background-color: #303030;
 }
 
@@ -367,7 +367,7 @@ header {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  padding-top: 0;
+
 }
 
 .tour-item .date-grid h2 {
@@ -385,8 +385,7 @@ header {
 }
 
 .tour-item .venue-grid,
-.tour-item .city-grid,
-.tour-item .ticket-grid {
+.tour-item .city-grid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -397,7 +396,7 @@ header {
   -ms-flex-pack: center;
   justify-content: center;
   border-left: 3px solid #eaf6f6;
-  padding: 0 0.5rem;
+  padding: 0.5rem;
 }
 
 .city-grid {
